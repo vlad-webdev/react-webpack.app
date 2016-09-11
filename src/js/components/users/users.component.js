@@ -13,7 +13,7 @@ export default class Users extends Component {
     }
   }
 
-  generateUniqueKey(index) {
+  generateUniqueKey = (index) => {
     return Date.now() + index;
   }
 
