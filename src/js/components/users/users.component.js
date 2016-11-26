@@ -13,10 +13,6 @@ export default class Users extends Component {
     }
   }
 
-  generateUniqueKey = (index) => {
-    return Date.now() + index;
-  }
-
   render() {
     return (
       <section>
@@ -25,7 +21,7 @@ export default class Users extends Component {
           {
             this.state.users.map((user, i) => {
               return (
-                <li key={this.generateUniqueKey(i)}>
+                <li key={i}>
                   <User user={user} />
                 </li>
               )
